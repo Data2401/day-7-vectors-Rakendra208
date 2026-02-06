@@ -1,10 +1,10 @@
 ---
 title: "In Class Lab"
-author: "Dr. Shoemaker"
+author: "Rakendra Sah"
 date: "DATA 2401"
 output: html_document
 ---
-**Note: Your exam will be in a similar format to this (RMarkdown File with Questions and Code chunks for your answers), so make sure you have the process for knitting to html working.** 
+ 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -15,10 +15,18 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Set 1 
 
 1. Use the colon operator : to create a vector `n` of numbers from 10:49
+n<- 10:49
 2. Use the `length()` function to get the number of elements in `n`
+length(n)
 3. Add 1 to each element in `n` and print the result
+n+1
 4. Create a vector `m` that contains the numbers 10 to 1 (in that order), in two different ways, neither of which is just typing "10, 9 , 8 ...".  Hint: use one of the helper functions we learned.
+m1<- seq(10,1)
+m2<- seq(1:10)
+m1
+m2
 5. Subtract `m` FROM `n`. Note the recycling!
+n-m1
 
 ### Set 2 
 
